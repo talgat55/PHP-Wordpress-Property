@@ -4,6 +4,21 @@
 **/
 add_theme_support('post-thumbnails');
 
+
+/*
+* Admin
+*/
+
+require_once('/redux/ReduxCore/framework.php' );
+require_once('/redux/sample/sample-config.php');
+
+
+/*
+if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/redux/options-config.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/redux/options-config.php' );
+}
+*/
+
 /*
 * Enrique Script
 */
