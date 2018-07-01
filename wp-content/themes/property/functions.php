@@ -29,6 +29,19 @@ function get_theme_options() {
 
 }
 /*
+* Add Navigation Menu
+*
+*/
+if ( function_exists( 'register_nav_menus' ) ) {
+
+    $menu_arr = array(
+        'top_menu' =>  __('Top Menu', 'light')
+    );
+
+
+    register_nav_menus($menu_arr);
+}
+/*
 * Enrique Script
 */
 

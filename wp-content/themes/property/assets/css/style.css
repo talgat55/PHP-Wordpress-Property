@@ -1,0 +1,11 @@
+/*
+*  Header One
+ */
+.top-nav{
+    margin: 0;
+    padding: 0;
+
+}
+.top-nav li{
+    display: inline;
+}
