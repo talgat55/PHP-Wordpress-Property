@@ -39,3 +39,11 @@ function th_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'th_scripts');
+if (!function_exists('custom_css_output')) {
+    function custom_css_output(){
+        include('assets/css/custom.php');
+    }
+}
+
+
+add_action('wp_head', 'custom_css_output');
