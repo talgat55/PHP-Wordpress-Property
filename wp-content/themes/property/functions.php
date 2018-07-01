@@ -18,7 +18,16 @@ if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/redux/options
     require_once( dirname( __FILE__ ) . '/redux/options-config.php' );
 }
 */
+/*
+ *  Redux theme otions
+ */
+function get_theme_options() {
 
+    $current_options = get_option('redux_demo');
+
+    return $current_options;
+
+}
 /*
 * Enrique Script
 */
