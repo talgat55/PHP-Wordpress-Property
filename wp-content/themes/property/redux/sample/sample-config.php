@@ -288,6 +288,21 @@ Redux::setSection($opt_name, array(
     'desc' => __('These options for customize header', 'redux-framework-demo'),
     'icon' => 'el el-home',
     'fields' => array(
+            array(
+                'id' => 'header-logo',
+                'type' => 'media',
+                'url' => true,
+                'title' => __('Logo header', 'redux-framework-demo'),
+                'compiler' => 'true',
+                //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc' => __(' ', 'redux-framework-demo'),
+                'subtitle' => __(' ', 'redux-framework-demo'),
+                'default' => '',
+                //'hint'      => array(
+                //    'title'     => 'Hint Title',
+                //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
+                //)
+            ),
         array(
             'id' => 'header-kinds',
             'type' => 'image_select',

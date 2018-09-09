@@ -9,15 +9,21 @@
 </head>
 <?php $options = get_theme_options(); ?>
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page"  >
 
     <header class="site-header">
         <div class="one-header">
             <div class="container">
                 <div id="logo">
-                    <a href="<?php echo home_url(); ?>" title="<?php _e('Home', 'light'); ?>">
-
+                    <a href="<?php echo home_url(); ?>" title="<?php _e('Home page', 'light'); ?>">
+                        <?php    if($options['header-logo']){  ?>
                         <img src="" alt="<?php _e('Logo', 'light'); ?>">
+                            <img src="<?php echo $options['header-logo']; ?>" alt="<?php _e('Logo', 'light'); ?>">
+                        <?php }else{  ?>
+
+                            <img src="<?php echo get_theme_file_uri('/assets/images/logo.jpg'); ?>" alt="<?php _e('Logo', 'light'); ?>">
+
+                        <?php } ?>
 
                     </a>
                 </div>

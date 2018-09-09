@@ -9,8 +9,8 @@ add_theme_support('post-thumbnails');
 * Admin
 */
 
-require_once('/redux/ReduxCore/framework.php' );
-require_once('/redux/sample/sample-config.php');
+require_once('redux/ReduxCore/framework.php' );
+require_once('redux/sample/sample-config.php');
 
 
 /*
@@ -49,7 +49,7 @@ function th_scripts()
 {
     // Theme stylesheet.
     wp_enqueue_style('th-style', get_theme_file_uri('style.css'), array(), '');
-    wp_enqueue_style('normalize', get_theme_file_uri('/assets/css/normalize.css'), array(), '1.0');
+    wp_enqueue_style('normalize', get_theme_file_uri('/assets/css/bootstrap.min.css'), array(), '1.0');
     wp_enqueue_style('style', get_theme_file_uri('/assets/css/style.css'), array(), '1.0');
 
    // wp_enqueue_script('tabs', get_theme_file_uri('/assets/js/tabs.js'), array(), '2');
