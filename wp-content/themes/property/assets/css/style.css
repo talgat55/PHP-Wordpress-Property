@@ -1,6 +1,46 @@
 /*
 *  Header One
  */
+
+body{
+    font-size: 15px;
+    line-height: 22px;
+    font-family: 'Dosis', sans-serif;
+    color: #0d0f10;
+}
+/*
+* logo
+ */
+#logo img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: 90px;
+}
+#logo a{
+    height: 90px;
+}
+#logo{
+    display: inline-block;
+}
+
+
+/*
+* Nav
+ */
+.top-nav-block{
+    display: inline-block;
+    padding-left: 20px;
+}
+.top-nav a{
+    color: #71d0c6;
+    line-height: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.top-nav li{
+    padding: 0 10px ;
+}
 .top-nav{
     margin: 0;
     padding: 0;

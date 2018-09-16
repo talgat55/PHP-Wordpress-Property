@@ -9,19 +9,20 @@
 </head>
 <?php $options = get_theme_options(); ?>
 <body <?php body_class(); ?>>
-<div id="page"  >
+<div id="page">
 
     <header class="site-header">
-        <div class="one-header">
+        <div class="one-header clearfix">
             <div class="container">
                 <div id="logo">
                     <a href="<?php echo home_url(); ?>" title="<?php _e('Home page', 'light'); ?>">
-                        <?php    if($options['header-logo']){  ?>
-                        <img src="" alt="<?php _e('Logo', 'light'); ?>">
+                        <?php if ($options['header-logo']) { ?>
+                            <img src="" alt="<?php _e('Logo', 'light'); ?>">
                             <img src="<?php echo $options['header-logo']; ?>" alt="<?php _e('Logo', 'light'); ?>">
-                        <?php }else{  ?>
+                        <?php } else { ?>
 
-                            <img src="<?php echo get_theme_file_uri('/assets/images/logo.jpg'); ?>" alt="<?php _e('Logo', 'light'); ?>">
+                            <img src="<?php echo get_theme_file_uri('/assets/images/logo.jpg'); ?>"
+                                 alt="<?php _e('Logo', 'light'); ?>">
 
                         <?php } ?>
 
@@ -36,7 +37,23 @@
                     <?php endif; ?>
                 </div><!--  end nav top -->
                 <div class="right-block-header feedback">
+                    <?php  if($options['header-phone-link']){  ?>
+                    <div class="header-block--phone">
+                        <a href="tel:<?php echo $options['header-phone-link']; ?>" class="header-phone-link">
+                            <i class="fas fa-phone"></i>
+                            <?php echo $options['header-phone-link']; ?>
+                        </a>
+                    </div>
+                    <?php }   ?>
+                    <?php  if($options['header-email-link']){  ?>
+                        <div class="header-block--email">
+                            <a href="mailto:<?php echo $options['header-email-link']; ?>" class="header-email-link">
+                                <i class="fas fa-at"></i>
+                                <?php echo $options['header-email-link']; ?>
+                            </a>
+                        </div>
 
+                    <?php }   ?>
                 </div>
             </div>
 

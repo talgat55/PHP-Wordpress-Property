@@ -304,6 +304,16 @@ Redux::setSection($opt_name, array(
                 //)
             ),
         array(
+            'id' => 'header-phone-link',
+            'type' => 'text',
+            'title' => __('Link ot phone', 'redux-framework-demo'),
+        ),
+        array(
+            'id' => 'header-email-link',
+            'type' => 'text',
+            'title' => __('Link ot email', 'redux-framework-demo'),
+        ),
+        array(
             'id' => 'header-kinds',
             'type' => 'image_select',
             'title' => __('Choose header', 'redux-framework-demo'),
