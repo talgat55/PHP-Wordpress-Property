@@ -8,6 +8,10 @@ body{
     font-family: 'Dosis', sans-serif;
     color: #0d0f10;
 }
+.right-block-header{
+    float: right;
+    display: table;
+}
 /*
 * logo
  */
@@ -48,4 +52,22 @@ body{
 }
 .top-nav li{
     display: inline;
+}
+.header-block--phone i,
+.header-block--email i{
+    color: #71d0c6;
+    padding-right: 7px;
+}
+.header-block--phone ,
+.header-block--email {
+    display: table-cell;
+}
+.header-block--phone{
+    padding-right: 20px;
+}
+.header-block--phone a,
+.header-block--email a{
+    line-height: 90px;
+    font-size: 15px;
+    color:  #0d0f10;
 }
