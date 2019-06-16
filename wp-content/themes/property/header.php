@@ -36,7 +36,7 @@
                     <?php endif; ?>
                 </div><!--  end nav top -->
                 <div class="right-block-header feedback">
-                    <?php  if($options['header-phone-link']){  ?>
+                    <?php  if(!empty($options['header-phone-link'] )){  ?>
                     <div class="header-block--phone">
                         <a href="tel:<?php echo $options['header-phone-link']; ?>" class="header-phone-link">
                             <i class="fas fa-phone"></i>
@@ -44,7 +44,7 @@
                         </a>
                     </div>
                     <?php }   ?>
-                    <?php  if($options['header-email-link']){  ?>
+                    <?php  if(!empty($options['header-email-link'])){  ?>
                         <div class="header-block--email">
                             <a href="mailto:<?php echo $options['header-email-link']; ?>" class="header-email-link">
                                 <i class="fas fa-at"></i>

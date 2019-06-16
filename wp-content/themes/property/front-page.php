@@ -13,13 +13,23 @@
  */
 
 get_header(); ?>
+<?php $options = get_theme_options(); ?>
+
+
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+    <?php
+    $banner_home = $options['banner-home-main']['url'];
 
+    if($banner_home  && !empty($banner_home)){
+        $redyLinkBanner = $banner_home;
+    }else{
+        $redyLinkBanner = '';
+    }
+    ?>
+	<section id="banner-home" style="background: url(<?php echo $redyLinkBanner; ?>); ">
 
-
-	</main><!-- #main -->
+    </section>
 </div><!-- #primary -->
 
 <?php get_footer();

@@ -280,29 +280,29 @@ Redux::setHelpSidebar($opt_name, $content);
      */
 
 /*
-     * * Header
-     */
+ * * Header
+*/
 Redux::setSection($opt_name, array(
     'title' => __('Header', 'redux-framework-demo'),
     'id' => 'header',
     'desc' => __('These options for customize header', 'redux-framework-demo'),
     'icon' => 'el el-home',
     'fields' => array(
-            array(
-                'id' => 'header-logo',
-                'type' => 'media',
-                'url' => true,
-                'title' => __('Logo header', 'redux-framework-demo'),
-                'compiler' => 'true',
-                //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                'desc' => __(' ', 'redux-framework-demo'),
-                'subtitle' => __(' ', 'redux-framework-demo'),
-                'default' => '',
-                //'hint'      => array(
-                //    'title'     => 'Hint Title',
-                //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
-                //)
-            ),
+        array(
+            'id' => 'header-logo',
+            'type' => 'media',
+            'url' => true,
+            'title' => __('Logo header', 'redux-framework-demo'),
+            'compiler' => 'true',
+            //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+            'desc' => __(' ', 'redux-framework-demo'),
+            'subtitle' => __(' ', 'redux-framework-demo'),
+            'default' => '',
+            //'hint'      => array(
+            //    'title'     => 'Hint Title',
+            //    'content'   => 'This is a <b>hint</b> for the media field with a Title.',
+            //)
+        ),
         array(
             'id' => 'header-phone-link',
             'type' => 'text',
@@ -350,8 +350,34 @@ Redux::setSection($opt_name, array(
     )
 ));
 
+/**
+ *  Main
+ */
 
-
+Redux::setSection($opt_name, array(
+    'title' => __('Main', 'redux-framework-demo'),
+    'id' => 'main',
+    'desc' => __('These options for customize header', 'redux-framework-demo'),
+    'icon' => 'el el-home',
+    'fields' => array(
+        array(
+            'id' => 'banner-home-main',
+            'type' => 'media',
+            'url' => true,
+            'title' => __('Banner home page', 'redux-framework-demo'),
+            'desc' => __('Add banner for home page', 'redux-framework-demo'),
+            'default' => array(
+                'url' => ""
+            ),
+        ),
+        array(
+            'id' => 'color-theme-main',
+            'type' => 'color',
+            'title' => __('Цвет Темы', 'redux-framework-demo'),
+            'default' => '#49c5b6',
+        )
+    )
+));
 
 // -> START Basic Fields
 Redux::setSection($opt_name, array(

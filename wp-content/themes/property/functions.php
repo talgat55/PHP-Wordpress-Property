@@ -50,7 +50,7 @@ function th_scripts()
     // Theme stylesheet.
     wp_enqueue_style('th-style', get_theme_file_uri('style.css'), array(), '');
     wp_enqueue_style('normalize', get_theme_file_uri('/assets/css/bootstrap.min.css'), array(), '1.0');
-    wp_enqueue_style('Dosis', '//fonts.googleapis.com/css?family=Dosis', array(), '1.0');
+    wp_enqueue_style('dosis', '//fonts.googleapis.com/css?family=Dosis', array(), '1.0');
     wp_enqueue_style('fontawesome', '//use.fontawesome.com/releases/v5.3.1/css/all.css', array(), '1.0');
     wp_enqueue_style('style', get_theme_file_uri('/assets/css/style.css'), array(), '1.0');
 

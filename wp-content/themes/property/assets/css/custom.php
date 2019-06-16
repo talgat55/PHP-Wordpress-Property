@@ -6,20 +6,13 @@
 		ob_start(); 
 
 
-			echo '<style type="text/css">';
+ echo '<style type="text/css">
+body{
+    color: '.$options["color-theme-main"].';
 
-
-		    echo '</style>';
-		
-		
+}
+</style>' ;
 		$dynamic_css = ob_get_contents();
 		ob_end_clean();
-
-
-
-	
-	
-	
-
 
 ?>
